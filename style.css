@@ -106,13 +106,13 @@ a {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  width: 100%;
+  height: 100%;
 }
 
 .container:hover .middle {
-  opacity: .3;
-  background-color: var(--cyan);
-  width: 100%;
-  height: 100%;
+  opacity: 1;
+  background-color: rgba(0, 255, 247, 0.4);
   border-radius: 0.5rem;
 }
 
@@ -127,10 +127,13 @@ a {
 }
 
 .view-eye {
-  background: url("./images/visibility_white_48dp.svg");
+  background: url("./images/icon-visibility.svg");
   background-repeat: no-repeat;
   width: 3rem !important;
   height: 3rem !important;
+  position: absolute;
+  top: 40%;
+  left: 43%;
 }
 
 .avatar {
