@@ -46,10 +46,7 @@ a {
   padding: 2rem;
   flex-direction: column;
   border-radius: 1rem;
-  /* box-shadow: 0 5px 5px -5px hsl(214, 51%, 9%),
-              -5px 0 5px -5px hsl(214, 51%, 9%), 
-              5px 0 5px -5px hsl(214, 51%, 9%); */
-              box-shadow: 0 -6px 0 var(--dark-blue-main), 0 20px 16px rgba(0,0,0, .7);
+  box-shadow: 0 -6px 0 var(--dark-blue-main), 0 20px 16px rgba(0, 0, 0, 0.7);
 }
 
 .card h2 {
