@@ -1,0 +1,148 @@
+:root {
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --dark-blue-main: hsl(217, 54%, 11%);
+  --dark-blue-card: hsl(216, 50%, 16%);
+  --dark-blue-line: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--dark-blue-main);
+}
+
+p {
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar {
+  width: 2rem !important;
+  border: 1px solid var(--white);
+  border-radius: 30px;
+  margin-right: 1rem;
+}
+
+.card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 96vh;
+}
+
+.card {
+  width: 20rem;
+  background-color: var(--dark-blue-card);
+  padding: 2rem;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+.card h2 {
+  color: var(--white);
+}
+
+.card p {
+  color: var(--soft-blue);
+}
+
+.card img {
+  width: 20rem;
+  border-radius: 0.5rem;
+}
+
+.card i {
+  height: 1rem;
+  width: 1rem;
+  display: block;
+}
+
+.card hr {
+  border: none;
+  border-top: 2px solid var(--dark-blue-line);
+  color: #333;
+  overflow: visible;
+  text-align: center;
+}
+
+.card a {
+  color: var(--white);
+}
+
+.card a:hover {
+  color: var(--cyan);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.etherum {
+  background: url("./images/icon-ethereum.svg");
+  background-repeat: no-repeat;
+}
+
+.timer {
+  background: url("./images/icon-clock.svg");
+  background-repeat: no-repeat;
+}
+
+.view-eye {
+  background: url("./images/visibility_white_48dp.svg");
+  background-repeat: no-repeat;
+  width: 3rem !important;
+  height: 3rem !important;
+}
+
+.avatar {
+  background: url("./images/image-avatar.png");
+  background-repeat: no-repeat;
+  border-radius: 30px !important;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
